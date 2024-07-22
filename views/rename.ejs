@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <form action="/renameFile/<%= data.filename %>" method="post">
+            <div>
+                <label>old name</label>
+                <label><%= data.filename %></label>
+            </div>
+
+            <div>
+                <label>new name</label>
+                <input name="newName">
+            </div>
+            <div>
+                <button>Rename</button>
+            </div>
+            
+        </form>
+    </body>
+</html>

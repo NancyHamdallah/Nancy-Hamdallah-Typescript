@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <h1> Let's work on Files </h1>
+        <div>
+            <button ><a href="/create">Create New File</a></button>
+        </div>
+        
+        <div>
+            <button ><a href="/upload">Upload New File</a></button>
+        </div>
+    <ul> List of files : 
+        <% data.forEach(file=>{ %>
+            <li >
+                
+                    <a href="/files/<%=file%>" style="margin-right: 40px;"> <%= file %></a> 
+                
+                
+                    <a href ="/showUpdate/<%=file%>" style="margin-right: 20px;"> Update</a>
+                    <a href= "/renamePage/<%=file%>" style="margin-right: 20px;"> Rename</a>
+                    <a href = "/delete/<%=file%>" style="margin-right: 20px;"> Delete</a>
+               
+                
+            </li>
+
+        <% })  %>
+       
+    </ul>
+    </body>
+    
+
+    
+</html>

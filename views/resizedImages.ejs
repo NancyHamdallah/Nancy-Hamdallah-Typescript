@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <h1> Resized Images </h1>
+        
+    <ul> List of Images : 
+        <% data.forEach(file=>{ %>
+            <li >
+                
+                    <a href="/download/<%=file%>" style="margin-right: 40px;"> <%= file %></a> 
+                
+                 <!-- <a href ="/showUpdate/<%=file%>" style="margin-right: 20px;"> Update</a> <a href ="/showUpdate/<%=file%>" style="margin-right: 20px;"> Update</a>-->    
+                 <!--   <a href= "/renamePage/<%=file%>" style="margin-right: 20px;"> Rename</a> -->
+                 <!--   <a href = "/delete/<%=file%>" style="margin-right: 20px;"> Delete</a> -->
+               
+            </li>
+
+        <% })  %>
+       
+    </ul>
+    </body>
+    
+
+    
+</html>

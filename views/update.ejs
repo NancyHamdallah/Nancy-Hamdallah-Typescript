@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <form action="/update/<%= data.filename%>" method="post">
+            <div>
+                <div><label for="title"><%= data.filename%></label></div>
+               
+            </div>
+            
+
+            <div>
+                
+                <textarea id="content" name="content" style="width:300px;height:300px; "></textarea>
+            </div>
+            
+
+            <button>Update</button>
+        </form>
+        <script>
+           // document.getElementById("title").value = ' <%= data.filename%>' ;
+            document.getElementById("content").value = ' <%= data.fileContent%>' ;
+            </script>
+    </body>
+    
+</html>
